@@ -1,9 +1,7 @@
 {
   "name": "vue-sfc-vite",
   "version": "0.0.1",
-
   "description": "Vue SFC Vite is a Vue 3 SFC template for Vite",
-
   "author": "Afzalur Rahman Sabbir <afzalbd1@gmail.com>",
   "homepage": "https://github.com/afzalsabbir/vue-sfc-vite#readme",
   "license": "MIT",
@@ -14,7 +12,6 @@
   "bugs": {
     "url": "https://github.com/afzalsabbir/vue-sfc-vite/issues"
   },
-
   "bin": {
     "vue-sfc-vite": "./built/src/index.js"
   },
@@ -22,7 +19,6 @@
     "start": "vue-sfc-vite"
   },
   "type": "module",
-
   "dependencies": {
     "@types/inquirer": "^9.0.3",
     "case": "^1.6.3",
