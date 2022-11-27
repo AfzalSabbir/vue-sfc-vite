@@ -1,6 +1,6 @@
 {
   "name": "@afzalsabbir/vue-sfc-vite",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1",
   "description": "Vue SFC Vite is a Vue 3 SFC template for Vite",
   "keywords": [
     "vue",
