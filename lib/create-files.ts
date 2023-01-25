@@ -60,7 +60,7 @@ const createFile = (options, replaceData) => {
     fileName = fileName.replace("*", newOptions.componentName);
   }
 
-  if (newOptions.ts && fileName.includes(".js")) {
+  if (newOptions.ts && fileName.endsWith(".js")) {
     fileName = fileName.replace(".js", ".ts");
   }
 
