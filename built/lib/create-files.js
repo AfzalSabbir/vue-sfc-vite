@@ -46,7 +46,7 @@ const createFile = (options, replaceData) => {
     if (fileName.includes("*.")) {
         fileName = fileName.replace("*", newOptions.componentName);
     }
-    if (newOptions.ts && fileName.includes(".js")) {
+    if (newOptions.ts && fileName.endsWith(".js")) {
         fileName = fileName.replace(".js", ".ts");
     }
     const distFile = path.resolve(installToDistPath, newOptions.directory, replaceData.target.directory, fileName);
