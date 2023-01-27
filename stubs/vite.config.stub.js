@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, "src/components/index.js"),
+      entry: resolve(__dirname, "src/components/index.<%= language %>"),
       name: "<%= name %>",
       // the proper extensions will be added
       fileName: (format) => `<%= fileName %>.${format}.js`,
