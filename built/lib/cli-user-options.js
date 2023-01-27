@@ -47,8 +47,8 @@ const inquirerUserOptions = [
         name: "language",
         message: "Will this component be written in JavaScript or TypeScript?",
         choices: [
-            { name: "JavaScript", value: "js" },
             { name: "TypeScript", value: "ts" },
+            { name: "JavaScript", value: "js" },
         ],
     },
     {
