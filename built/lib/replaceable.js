@@ -101,10 +101,22 @@ const replaceable = [
         stubName: "componentName.stub.vue",
         replaces: {
             componentNamePascalCase: "componentNamePascalCase",
+            componentName: "componentName",
         },
         target: {
             fileName: "*.vue",
             directory: "./src/components",
+        },
+        language: [
+            "js", "ts"
+        ]
+    },
+    {
+        stubName: "componentName.stub.scss",
+        replaces: {},
+        target: {
+            fileName: "*.scss",
+            directory: "./src/assets/scss",
         },
         language: [
             "js", "ts"
