@@ -1,6 +1,6 @@
 <% if(vueVersion === "vue2") { -%>
 <template>
-  <button @click="increas">Clicked {{ count }} times.</button>
+  <button class="increase" @click="increase">Clicked {{ count }} times.</button>
 </template>
 
 <% } -%>
@@ -21,7 +21,7 @@ export default <% if (vueVersion === "vue3") {%>defineComponent(<% } else if (ts
     };
   },
   methods: {
-    increas() {
+    increase() {
       this.count++;
     },
   },
@@ -29,12 +29,12 @@ export default <% if (vueVersion === "vue3") {%>defineComponent(<% } else if (ts
     if(vueVersion === "vue3") { -%>
   setup() {
     const count = ref<% if (ts) { %><number><% } %>(0);
-    const increas = () => {
+    const increase = () => {
       count.value++;
     };
     return {
       count,
-      increas,
+      increase,
     };
   },
 <% } -%>
@@ -47,8 +47,10 @@ export default <% if (vueVersion === "vue3") {%>defineComponent(<% } else if (ts
 <% if(vueVersion === "vue3") { -%>
 
 <template>
-  <button @click="increas">Clicked {{ count }} times.</button>
+  <button class="increase" @click="increase">Clicked {{ count }} times.</button>
 </template>
 <% } -%>
 
-<style scoped></style>
+<style scoped lang="scss">
+  @import "../assets/scss/<%= componentName %>.scss";
+</style>
