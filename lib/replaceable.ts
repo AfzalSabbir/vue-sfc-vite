@@ -2,7 +2,7 @@ import {Replaceable} from '../types/replaceable';
 
 const replaceable:Replaceable[] = [
   {
-    stubName: "index.stub.html",
+    stubName: "index.html.ejs",
     replaces: {},
     target: {
       fileName: "index.html",
@@ -13,7 +13,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "vite.config.stub.js",
+    stubName: "vite.config.js.ejs",
     replaces: {
       name: "componentNamePascalCase",
       fileName: "kebabCase",
@@ -27,7 +27,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "package.stub.json",
+    stubName: "package.json.ejs",
     replaces: {
       directory: "directory",
       kebabCase: "kebabCase",
@@ -41,7 +41,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "README.stub.md",
+    stubName: "README.md.ejs",
     replaces: {},
     target: {
       fileName: "README.md",
@@ -63,7 +63,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "main.stub.js",
+    stubName: "main.js.ejs",
     replaces: {},
     target: {
       fileName: "main.js",
@@ -74,7 +74,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "App.stub.vue",
+    stubName: "App.vue.ejs",
     replaces: {
       componentName: "componentNamePascalCase",
     },
@@ -87,7 +87,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "index.stub.js",
+    stubName: "index.js.ejs",
     replaces: {
       componentName: "componentName",
     },
@@ -100,7 +100,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "componentName.stub.vue",
+    stubName: "componentName.vue.ejs",
     replaces: {
       componentNamePascalCase: "componentNamePascalCase",
       componentName: "componentName",
@@ -114,7 +114,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "componentName.stub.scss",
+    stubName: "componentName.scss.ejs",
     replaces: {},
     target: {
       fileName: "*.scss",
@@ -125,7 +125,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "vite-env.d.stub.ts",
+    stubName: "vite-env.d.ts.ejs",
     replaces: {},
     target: {
       fileName: "vite-env.d.ts",
@@ -136,7 +136,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "tsconfig.stub.json",
+    stubName: "tsconfig.json.ejs",
     replaces: {},
     target: {
       fileName: "tsconfig.json",
@@ -147,7 +147,7 @@ const replaceable:Replaceable[] = [
     ]
   },
   {
-    stubName: "tsconfig.node.stub.json",
+    stubName: "tsconfig.node.json.ejs",
     replaces: {},
     target: {
       fileName: "tsconfig.node.json",
