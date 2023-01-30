@@ -50,7 +50,7 @@ const replaceable = [
         ]
     },
     {
-        stubName: "stub.gitignore",
+        stubName: "gitignore.ejs",
         replaces: {},
         target: {
             fileName: ".gitignore",
