@@ -29,6 +29,7 @@ const createFile = (options, replaceData) => {
     const newOptions = options;
     const replaces = {};
     newOptions.componentNamePascalCase = Case.pascal(newOptions.componentName);
+    newOptions.componentNameKebabCase = Case.kebab(newOptions.componentName);
     newOptions.ts = newOptions.language === "ts";
     // read any file src/vite.config.js
     const file = path.resolve(installFromStubsPath, replaceData.target.directory, replaceData.stubName);
