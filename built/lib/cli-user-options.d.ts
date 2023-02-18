@@ -13,14 +13,6 @@ declare const inquirerUserOptions: ({
     type: string;
     name: string;
     message: string;
-    choices: string[];
-    default?: undefined;
-    validate?: undefined;
-    filter?: undefined;
-} | {
-    type: string;
-    name: string;
-    message: string;
     default: string;
     validate: (input: any) => true | "Please enter a valid npm name";
     choices?: undefined;
