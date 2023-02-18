@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file. This projec
 to [Semantic Versioning](http://semver.org/). This changelog was generated
 with [github_changelog_generator](https://github.com/marketplace/actions/generate-changelog).
 
+## [0.1.1-alpha-0] - 2023-02-18
+
+### Features
+- [x] `Library` & `Single Component` mode enabled
+
+## Changed
+- Bumped `package.json` version to `0.1.1-alpha-0`
+
+
 ## [0.1.0-alpha-5] - 2023-02-11
 
 ### Fixed
