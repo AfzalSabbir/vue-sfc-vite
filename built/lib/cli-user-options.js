@@ -13,7 +13,10 @@ const inquirerUserOptions = [
         type: "list",
         name: "type",
         message: "Is this a single component or a library?",
-        choices: ["Single Component"],
+        choices: [
+            { name: "Single Component", value: "component" },
+            { name: "Library", value: "library" },
+        ],
         // filter(val) {
         //   return val.toLowerCase();
         // },

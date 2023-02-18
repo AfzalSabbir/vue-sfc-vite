@@ -1,5 +1,5 @@
 <script setup<% if (ts) { %> lang="ts"<% } %>>
-import { <%= componentNamePascalCase %> } from './components/';
+import <% if (!component) { %>{ <% } %><%= componentNamePascalCase %><% if (!component) { %> }<% } %> from './components/';
 </script>
 
 <template>
